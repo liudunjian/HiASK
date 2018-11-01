@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/multi_collect_delete_root"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:minHeight="200px">
+
+        <TextView
+            android:id="@+id/multi_collect_delete_btn"
+            android:layout_width="220px"
+            android:layout_height="match_parent"
+            android:background="#8BC34A"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消收藏"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/multi_collect_content_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/multi_collect_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="60px"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="#222222"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/multi_collect_content_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="10px"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="#514f4f"
+            android:textSize="46px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_space_line"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>

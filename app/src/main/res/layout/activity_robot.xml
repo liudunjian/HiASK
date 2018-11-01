@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_toolbar_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:layout_marginTop="57px">
+
+            <ImageView
+                android:id="@+id/robot_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:padding="30px"
+                android:src="@drawable/ic_titlebar_app_back" />
+
+            <TextView
+                android:id="@+id/robot_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/robot_toolbar_title"
+                android:textColor="@android:color/white"
+                android:textSize="56px" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.hisense.hiask.widget.refresh.RxRefreshLayout
+                android:id="@+id/robot_message_list_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.hisense.himultitype.view.LinearMultiView
+                    android:id="@+id/robot_message_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    app:linear_orientation="1" />
+            </com.hisense.hiask.widget.refresh.RxRefreshLayout>
+
+            <com.hisense.hiask.robot.widget.MaxHeightListView
+                android:id="@+id/robot_suggestion_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180px"
+                android:layout_marginRight="180px"
+                android:divider="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:list_max_height="600px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_space_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@color/color_robot_panel_back"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/robot_input_key"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/selector_robot_input_key"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/robot_input_audio"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/selector_robot_input_audio"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/robot_input_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="320px"
+                    android:scrollbars="vertical"
+                    android:textSize="60px"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/robot_input_record"
+                    android:layout_width="0dp"
+                    android:layout_height="110px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_robot_input_record"
+                    android:text="@string/robot_audio_hold_to_talk"
+                    android:textColor="#868080"
+                    android:textSize="48px"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/robot_input_plugin"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/selector_robot_input_plugin"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/robot_input_send"
+                    android:layout_width="130px"
+                    android:layout_height="110px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10px"
+                    android:background="@drawable/selector_robot_input_send"
+                    android:text="@string/robot_text_press_to_send"
+                    android:textColor="@color/color_robot_send_button_text"
+                    android:textSize="48px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_space_line" />
+
+            <com.hisense.hiask.robot.widget.RobotPluginMenuLayout
+                android:id="@+id/robot_plugin_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/robot_record_control"
+            android:layout_width="520px"
+            android:layout_height="520px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_robot_record_control"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/robot_record_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100px"
+                app:srcCompat="@drawable/robot_record_cancel" />
+
+            <TextView
+                android:id="@+id/robot_record_state"
+                android:layout_width="480px"
+                android:layout_height="85px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50px"
+                android:background="@color/color_robot_record_finish"
+                android:gravity="center"
+                android:textColor="@color/color_robot_record_text"
+                android:textSize="43px" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/robot_msg_menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_robot_msg_menu_item"
+    android:paddingBottom="16px"
+    android:paddingLeft="56px"
+    android:paddingRight="56px"
+    android:paddingTop="16px"
+    android:text="1231321"
+    android:textColor="#ff222222" />

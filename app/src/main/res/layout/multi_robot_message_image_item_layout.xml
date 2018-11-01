@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <TextView
+        android:id="@+id/robot_message_image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_robot_multi_message_time"
+        android:paddingBottom="20px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingTop="20px"
+        android:textColor="#ffffffff"
+        android:textSize="36px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24px">
+
+        <ImageView
+            android:id="@+id/robot_message_image_header_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24px"
+            android:src="@drawable/robot_portrait_robot" />
+
+        <FrameLayout
+            android:id="@+id/robot_message_image_content_layout"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/robot_message_image_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="200px"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/robot_message_image_header_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:src="@drawable/robot_portrait_user" />
+    </LinearLayout>
+</LinearLayout>

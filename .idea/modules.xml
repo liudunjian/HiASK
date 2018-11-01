@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HiASK.iml" filepath="$PROJECT_DIR$/HiASK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hiaudio/hiaudio.iml" filepath="$PROJECT_DIR$/hiaudio/hiaudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hiautolayout/hiautolayout.iml" filepath="$PROJECT_DIR$/hiautolayout/hiautolayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibeans/hibeans.iml" filepath="$PROJECT_DIR$/hibeans/hibeans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibot/hibot.iml" filepath="$PROJECT_DIR$/hibot/hibot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/higreendao/higreendao.iml" filepath="$PROJECT_DIR$/higreendao/higreendao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/himultitype/himultitype.iml" filepath="$PROJECT_DIR$/himultitype/himultitype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hinetapi/hinetapi.iml" filepath="$PROJECT_DIR$/hinetapi/hinetapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hiretrofit/hiretrofit.iml" filepath="$PROJECT_DIR$/hiretrofit/hiretrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hitools/hitools.iml" filepath="$PROJECT_DIR$/hitools/hitools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hitran/hitran.iml" filepath="$PROJECT_DIR$/hitran/hitran.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.hisense.hibot">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="accessKey"
+            android:value="MTA1NSM5ZWQwODAyYy04NjMxLTRkN2MtOTE1NS1lMWVjNzVkODM0ODIjYzlmN2UxMmYtMDFkMC00OGMxLWE2N2QtNDhjZGZiZWFjZmFkIzhkYmFkMTcwOWJkMWRkNzAxMmEzY2Q5Y2M5N2I5ODM1"/>
+    </application>
+
+</manifest>

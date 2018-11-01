@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500px"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/view_circle_loading_progress_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:id="@+id/view_circular_progress"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                app:cpv_indeterminate="true"
+                app:cpv_color="@android:color/holo_blue_bright"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:text="@string/view_circle_loading_progress_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_circle_loading_failed_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:src="@drawable/icon_loading_failed"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:text="@string/view_circle_loading_failed_title" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

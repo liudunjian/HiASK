@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/multi_quest_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="135px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/multi_quest_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingBottom="30px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="40px"
+            android:text="123213213"
+            android:textAlignment="center"
+            android:textColor="#514f4f"
+            android:textSize="50px" />
+
+        <View
+            android:id="@+id/multi_quest_category_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</FrameLayout>

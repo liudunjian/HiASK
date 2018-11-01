@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_toolbar_background">
+
+        <RelativeLayout
+            android:id="@+id/quest_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:layout_marginTop="57px">
+
+            <ImageView
+                android:id="@+id/quest_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@android:color/transparent"
+                android:padding="30px"
+                android:src="@drawable/ic_titlebar_app_back" />
+
+            <ImageView
+                android:id="@+id/quest_title_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/quest_title_back"
+                android:src="@drawable/ic_titlebar_app_close"
+                android:layout_marginLeft="20px"
+                android:padding="30px"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/quest_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/bank_toolbar_title"
+                android:textColor="@android:color/white"
+                android:textSize="56px" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/quest_linear_multi_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.hisense.himultitype.view.LinearMultiView
+                android:id="@+id/quest_linear_category_multi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" />
+
+            <com.hisense.himultitype.view.LinearMultiView
+                android:id="@+id/quest_linear_content_multi_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:linear_orientation="1" />
+        </LinearLayout>
+
+
+        <com.hisense.hiask.widget.loading.CircleLoadingView
+            android:id="@+id/quest_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

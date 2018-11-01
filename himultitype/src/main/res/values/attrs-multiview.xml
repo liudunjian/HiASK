@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LinearMultiView">
+        <attr name="linear_orientation" format="integer"/>
+        <attr name="linear_reverse_layout" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="GridMultiView">
+        <attr name="grid_orientation" format="integer"/>
+        <attr name="grid_reverse_layout" format="boolean"/>
+        <attr name="span_size" format="integer"/>
+    </declare-styleable>
+</resources>

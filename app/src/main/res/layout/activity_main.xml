@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/drawable_main_bottom_bar_nav"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/main_bottombar_bank_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80px"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/main_bottombar_bank_button"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center"
+                android:src="@drawable/main_lib_normal" />
+
+            <TextView
+                android:id="@+id/main_bottombar_bank_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_bottombar_bank_button"
+                android:layout_gravity="center"
+                android:layout_marginTop="14px"
+                android:text="@string/main_bottom_bar_service_title"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_bottombar_robot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11px"
+            android:src="@drawable/drawable_main_bottom_bar_robot" />
+
+        <LinearLayout
+            android:id="@+id/main_bottombar_my_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_bottombar_my_button"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/main_my_normal" />
+
+            <TextView
+                android:id="@+id/main_bottombar_my_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_bottombar_my_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14px"
+                android:text="@string/main_bottom_bar_my_title"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

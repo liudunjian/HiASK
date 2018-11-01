@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_space_line">#d4bec5</color>
+    <color name="color_default_background">#f9f6f7</color>
+
+    <!--robot-->
+    <color name="color_robot_record_finish">#00000000</color>
+    <color name="color_robot_record_text">#FFFFFFFF</color>
+    <color name="color_robot_panel_back">#F3F3F3</color>
+    <color name="color_robot_send_button_text">#FFFFFF</color>
+    <color name="color_robot_record_cancel">#ff93302f</color>
+
+    <!--question-->
+
+    <!--main-->
+    <color name="color_main_svc_title_no">#d4bec5</color>
+    <color name="color_main_svc_title_enable">#222222</color>
+    <color name="main_bottom_bar_selected">#19a3d9</color>
+    <color name="main_bottom_bar_normal">#5a5a5a</color>
+
+
+
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':hibot', ':hitools', ':hiautolayout', ':himultitype', ':hibeans', ':hinetapi', ':hiretrofit', ':hiaudio', ':higreendao', ':hitran'

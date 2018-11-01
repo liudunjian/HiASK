@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_default_background">
+
+    <RelativeLayout
+        android:id="@+id/multi_bank_space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="210px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--我是由底线的--"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/multi_bank_space_line"
+        android:layout_width="match_parent"
+        android:layout_height="40px" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+ext {
+    android = [
+            applicationId    : "com.hisense.hiask.hiask",
+            compileSdkVersion: 25,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 21,
+            targetSdkVersion : 23,
+            versionCode      : 1804111345,
+            versionName      : "1.0.0"
+    ]
+
+    dversion = [
+            okhttp3         : '3.10.0',
+            retrofit       : '2.3.0',
+            rxandroid      : '2.0.1',
+            rxjava         : '2.1.3'
+    ]
+}
